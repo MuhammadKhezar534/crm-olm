@@ -1,0 +1,267 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 0px;
+  color: #fff;
+  transition: all 0.5s;
+
+  // sub menu
+
+  .sidebar-header {
+    padding: 30px 10px 26px 24px;
+    height: 90px;
+    cursor: pointer;
+
+    img {
+      margin-bottom: 12px;
+    }
+    .icon {
+      color: #000;
+      font-size: 10px;
+      display: none;
+    }
+  }
+
+  .nav-link {
+    padding: 0px !important;
+  }
+
+  .nv-item {
+    padding-top: 32px;
+  }
+
+  .is-active-nav {
+    box-shadow: 0px 20px 50px 0px rgba(55, 69, 87, 0.1);
+    border-radius: 0px 30px 30px 0px;
+    background-color: var(--primary);
+    .is-active {
+      color: #fff;
+    }
+  }
+
+  .nav-item-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    padding: 16px 0px 16px 0px;
+
+    cursor: pointer;
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  //   ul li:nth-child(5) {
+  //     margin-top: auto;
+  //   }
+
+  ul p {
+    color: #fff;
+    padding: 10px;
+  }
+
+  .menu-open {
+    background: #6d7fcc;
+  }
+
+  .nav-item:hover {
+    color: #7386d5;
+    background: #fff;
+  }
+
+  .items-menu {
+    color: #fff;
+    background: #6d7fcc;
+  }
+
+  .custom-nav {
+    text-align: left;
+    width: 100%;
+    li a {
+      color: #fff;
+      cursor: pointer;
+    }
+
+    li:hover a {
+      color: #7386d5;
+    }
+  }
+
+  li a.dropdown-toggle::after {
+    display: inline-flex;
+    position: relative;
+    left: 60%;
+    top: 10%;
+  }
+
+  .side-menu {
+    // padding: 0px;
+    overflow-y: scroll;
+    height: calc(100vh - 90px);
+
+    flex-direction: column;
+    align-items: flex-start;
+    // justify-content: space-between;
+  }
+
+  .side-menu::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  .side-menu::-webkit-scrollbar-thumb {
+    background: #f3f3f3;
+    border-radius: 3px;
+  }
+
+  .side-menu::-webkit-scrollbar-thumb:hover {
+    background: #f3f3f3;
+  }
+
+  // custom dropdown
+
+  .menu-open {
+    max-height: 200px; /* Adjust the height as needed */
+  }
+
+  .settings-icon {
+    margin-left: auto;
+
+    img {
+      margin-top: 3px;
+      height: 16px;
+    }
+  }
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-toggle {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .dropdown-menu.open {
+    max-height: 200px; /* Adjust the height as needed */
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  width: calc(100% - 280px);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+  z-index: 1;
+}
+
+.sidebar.is-open {
+  margin-left: 0px;
+  z-index: 11;
+  transition: all 0.5s;
+  width: 0px;
+  .sidebar-header {
+    img {
+      display: none;
+    }
+  }
+  // .backdrop {
+  //   opacity: 1;
+  //   visibility: visible;
+  //   transition: opacity 1s ease-in-out;
+  //   z-index: 2;
+  // }
+}
+
+.sidebar {
+  .sub-m-row {
+    margin-left: 32px;
+
+    .sub-menu {
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    .sub-men-act {
+      @extend .side-menu;
+      height: 100%;
+      color: var(--primary);
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .sidebar {
+    // margin-left: -280px;
+    z-index: 999;
+    width: 280px;
+    .sidebar-header {
+      display: flex;
+      // justify-content: space-between;
+      align-items: center;
+      // margin-bottom: 10px;
+      img {
+        display: unset;
+      }
+      .icon {
+        display: block;
+        width: 18px;
+        height: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .sidebar {
+    .sidebar-header {
+      margin-bottom: 10px !important;
+      padding: 20px 10px 20px 20px;
+    }
+    .nv-item {
+      padding-top: 22px;
+    }
+
+    h6 {
+      font-size: 12px !important;
+    }
+  }
+}

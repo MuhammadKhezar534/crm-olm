@@ -1,0 +1,70 @@
+.custom-table {
+  margin-top: 20px;
+  border-spacing: 20px;
+
+  tr {
+    th {
+      text-align: left;
+    }
+
+    thead {
+      margin-bottom: 20px;
+    }
+
+    th:first-child {
+      width: 10%;
+    }
+
+    th:nth-child(2) {
+      width: 30%;
+    }
+    th:nth-child(3) {
+      width: 35%;
+      margin-left: auto;
+    }
+    th:nth-child(4) {
+      text-align: center;
+      width: 8%;
+    }
+
+    td {
+      margin-right: 20px;
+    }
+
+    td:nth-child(1) {
+      width: 10%;
+    }
+    td:nth-child(2) {
+      width: 30%;
+    }
+    td:nth-child(3) {
+      width: 35%;
+    }
+    td:nth-child(4) {
+      width: 8%;
+    }
+  }
+
+  th {
+    color: #96a5b8;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .badge-c {
+    float: right;
+
+    border-radius: 8px;
+    padding: 2px;
+    width: 50px;
+    height: 24px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .custom-table {
+    border-spacing: 10px;
+  }
+}

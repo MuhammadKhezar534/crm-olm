@@ -1,0 +1,30 @@
+.template-ctn {
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+
+  .temp-list-row {
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid #d9d9d9;
+    background: #f4f4f4;
+    color: #7588a8;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .inner-img {
+    text-align: center;
+    padding: 20px 0;
+
+    img {
+      width: 161px;
+      height: 226px;
+    }
+  }
+}

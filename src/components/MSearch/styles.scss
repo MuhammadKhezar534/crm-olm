@@ -1,0 +1,37 @@
+.m-search {
+  position: relative;
+  padding: 4px 10px 2px 50px;
+  // border: 1px solid #ededed !important;
+  border-radius: 16px;
+  width: 30%;
+  background-color: #f9fafb;
+
+  input {
+    border: none !important;
+    height: 40px;
+    max-width: 400px;
+  }
+
+  input:focus {
+    outline: none !important;
+  }
+
+  input::placeholder {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #737791;
+  }
+  img {
+    position: absolute;
+    left: 13px;
+    top: 11px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .m-search {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+.m-sw {
+  .MuiSwitch-root {
+    height: 76px;
+    border-radius: 5px;
+    .MuiSwitch-thumb {
+      height: 49px;
+      width: 16px;
+      border-radius: 4px;
+
+      box-shadow: none;
+    }
+    .MuiTouchRipple-root:focus-visible {
+      outline: none !important;
+    }
+    .MuiButtonBase-root {
+      top: 6.3px;
+      left: 6px;
+      padding: 7px;
+    }
+    .Mui-checked {
+      border-radius: 0px 2px 2px 0px !important;
+      color: #fff !important ;
+      left: 2px;
+    }
+
+    .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase:hover {
+      background-color: transparent !important;
+    }
+
+    .Mui-checked + .MuiSwitch-track {
+      background-color: var(--primary) !important;
+      opacity: 1;
+    }
+    .MuiSwitch-track {
+      background-color: #c7ced6 !important;
+      border-radius: 5px;
+    }
+  }
+}

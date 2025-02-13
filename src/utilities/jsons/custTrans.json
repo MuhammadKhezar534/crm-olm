@@ -1,0 +1,12 @@
+[
+  {
+    "isActive": true,
+    "title": "All Customers",
+    "to": ""
+  },
+  {
+    "isActive": false,
+    "title": "Transactions",
+    "to": ""
+  }
+]

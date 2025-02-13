@@ -1,0 +1,20 @@
+.form-m {
+  text-align: left;
+  label {
+    color: #344054;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+    // margin-left: 10px;
+  }
+  .c-field {
+    margin-bottom: 30px !important;
+
+    .MuiInput-input {
+      border-radius: 8px !important;
+      border: 1px solid var(--black-1, #cfd3d4) !important;
+    }
+  }
+}

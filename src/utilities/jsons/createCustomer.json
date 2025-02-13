@@ -1,0 +1,26 @@
+[
+  {
+    "isActive": true,
+    "title": "Customer details",
+    "id": 1,
+    "to": ""
+  },
+  {
+    "isActive": false,
+    "title": "Address",
+    "id": 2,
+    "to": ""
+  },
+  {
+    "isActive": false,
+    "title": "Card Details",
+    "id": 3,
+    "to": ""
+  },
+  {
+    "isActive": false,
+    "title": "Transaction History",
+    "id": 4,
+    "to": ""
+  }
+]

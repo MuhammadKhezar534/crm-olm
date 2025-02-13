@@ -1,0 +1,49 @@
+.top-bar {
+  background-color: #fff;
+  padding: 1.5rem;
+  position: fixed;
+  height: 60px;
+  width: calc(100% - 280px);
+  top: 0;
+  z-index: 7;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  // max-width: 900px;
+  // overflow-x: auto;
+  .toggle-btn {
+    display: none;
+  }
+  .user-p {
+    gap: 40px;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+.top-bar::-webkit-scrollbar {
+  display: none !important;
+}
+
+.top-bar.is-open {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .top-bar {
+    .toggle-btn {
+      display: block;
+      width: 18px;
+      height: 15px;
+    }
+
+    .user-p {
+      gap: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .top-bar .bell-icon {
+    margin-left: 12px;
+  }
+}

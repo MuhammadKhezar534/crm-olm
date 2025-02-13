@@ -1,0 +1,21 @@
+.lineChart {
+  .apexcharts-legend {
+    .apexcharts-legend-series {
+      margin-right: 20px !important;
+      .apexcharts-legend-marker {
+        border-radius: 50% !important;
+        height: 8px !important;
+        width: 8px !important;
+        margin-right: 10px !important;
+      }
+      .apexcharts-legend-text {
+        font-family: var(--inter) !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 12px !important;
+        line-height: 15px !important;
+        color: #7a7a9d !important;
+      }
+    }
+  }
+}

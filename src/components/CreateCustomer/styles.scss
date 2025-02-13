@@ -1,0 +1,56 @@
+.create-customer-ctn {
+  .inner-ctn {
+    margin-top: 104px;
+    padding: 30px 30px 120px;
+
+    .swicth-row {
+      justify-content: end;
+    }
+
+    .text-box-cust {
+      margin-top: 30px;
+      width: 99%;
+      border-radius: 5px 5px 0px 0px;
+      border-top: 1px solid #c1bcbc;
+      border-right: 1px solid #c1bcbc;
+      border-left: 1px solid #c1bcbc;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+      background-color: #fff;
+      padding: 6px 0px 0px 10px;
+      overflow: hidden;
+      textarea {
+        width: 99.4%;
+        height: 210px;
+        border: none;
+        margin-top: 4px;
+      }
+
+      textarea:focus {
+        outline: none;
+      }
+      .spn {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0.15px;
+      }
+    }
+
+    .sec-grid-col {
+      max-width: 390px;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .create-customer-ctn {
+    .inner-ctn {
+      .swicth-row {
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.customer-transaction-ctn {
+  .table-div {
+    span {
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 143%;
+      letter-spacing: 0.17px;
+    }
+  }
+  table {
+    tr {
+      th {
+        width: 10% !important;
+        text-align: left;
+      }
+    }
+
+    tr th:first-child {
+      padding-left: 20px !important;
+    }
+  }
+}

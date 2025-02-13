@@ -1,0 +1,29 @@
+[
+  {
+    "inactiveSrc": "/icons/dashboard.svg",
+    "activeSrc": "/icons/dashboardActive.svg",
+    "isActive": true,
+    "title": "Dashboard",
+    "to": "/",
+    "haveChild": false,
+    "display": true
+  },
+  {
+    "inactiveSrc": "/icons/customer.svg",
+    "activeSrc": "/icons/customerActive.svg",
+    "isActive": false,
+    "title": "Customers",
+    "to": "/customers",
+    "haveChild": false,
+    "display": true
+  },
+  {
+    "inactiveSrc": "/icons/campaign.svg",
+    "activeSrc": "/icons/campaignActive.svg",
+    "isActive": false,
+    "title": "Campaigns",
+    "to": "/campaign",
+    "haveChild": true,
+    "display": true
+  }
+]

@@ -1,0 +1,22 @@
+.trending-badge {
+  padding: 4px 6px 4px 4px;
+  border-radius: 50px;
+
+  .spn-v {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+  }
+}
+
+.trendUp {
+  background: rgba(35, 193, 10, 0.15);
+  color: #0b8a00;
+}
+
+.trendDown {
+  background: rgba(193, 10, 10, 0.15);
+  color: #c71026;
+}

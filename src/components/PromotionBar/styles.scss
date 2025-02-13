@@ -1,0 +1,15 @@
+.promotion-bar {
+  display: flex;
+  align-items: center;
+
+  .low {
+    color: #444a6d;
+  }
+
+  .badge-c {
+    border-radius: 8px;
+    width: 50px;
+    height: 24px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "isActive": true,
+    "title": "Template Builder",
+    "id": 1,
+    "to": ""
+  },
+  {
+    "isActive": false,
+    "title": "Templates",
+    "id": 2,
+    "to": ""
+  }
+]
