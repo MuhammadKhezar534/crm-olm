@@ -11,14 +11,14 @@
 
 #!/bin/bash
 
-start_date="2025-02-17"  # Change this to the first day of last month
-end_date="2025-02-19"    # Change this to the last day of last month
+start_date="2025-02-21"  # Change this to the first day of last month
+end_date="2025-02-23"    # Change this to the last day of last month
 
 while [ "$start_date" != "$(date -I -d "$end_date + 1 day")" ]; do
     echo " "
     git add .
     GIT_COMMITTER_DATE="$start_date 12:00:00" \
-    git commit --allow-empty --date "$start_date 12:00:00" -m "added new page compaign"
+    git commit --allow-empty --date "$start_date 12:00:00" -m "added new page content with styles"
 
     # Move to the next day
     start_date=$(date -I -d "$start_date + 1 day")

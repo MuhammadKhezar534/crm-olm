@@ -1,0 +1,18 @@
+.content {
+  padding: 0px !important;
+  margin-left: 280px;
+  height: 100vh;
+
+  width: calc(100% - 300px);
+}
+
+.content.is-open {
+  margin-left: 0px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 867px) {
+  .content {
+    width: unset;
+  }
+}
