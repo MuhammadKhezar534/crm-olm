@@ -1,0 +1,103 @@
+.create-capn-ctn {
+  .table-box-ctn {
+    padding: 30px 0px;
+  }
+  .inner-ctn {
+    margin-top: 104px;
+    padding: 30px 30px 120px;
+    .list-icon {
+      float: right;
+      cursor: pointer;
+    }
+
+    .tab-row {
+      width: 289px;
+      .dash-tab-ctn {
+        max-width: 300px;
+      }
+    }
+
+    .inp-ctn {
+      padding: 0px 30px;
+      span {
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 12px;
+        letter-spacing: 0.15px;
+        min-width: 50px;
+      }
+
+      .star {
+        color: #fa0707;
+      }
+      input {
+        margin-left: 10px;
+        padding-left: 10px;
+        width: 35%;
+        border-radius: 5px 5px 0px 0px;
+        border-top: 1px solid #c1bcbc;
+        border-right: 1px solid #c1bcbc;
+        border-left: 1px solid #c1bcbc;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+        height: 45px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+    }
+
+    .cntr-bar {
+      margin-top: 30px;
+      width: 98.7%;
+      border-top: 2px solid #cacaca;
+      border-bottom: 2px solid #cacaca;
+      background: #f3f3f3;
+      border-left: 3px solid #7c37b2;
+
+      .d-tit {
+        padding: 22px 17px;
+        background-color: #e9e9e9;
+        color: #706f70;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 12px; /* 100% */
+        letter-spacing: 0.15px;
+      }
+
+      .mbutton {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .create-capn-ctn {
+    .inner-ctn {
+      .inp-ctn {
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .temp-list-row {
+    .MuiGrid-root.MuiGrid-item {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+  }
+
+  .create-capn-ctn {
+    .inner-ctn {
+      padding: 30px 10px 120px;
+    }
+  }
+}
