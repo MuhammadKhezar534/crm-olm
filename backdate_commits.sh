@@ -18,7 +18,7 @@ while [ "$start_date" != "$(date -I -d "$end_date + 1 day")" ]; do
     echo " "
     git add .
     GIT_COMMITTER_DATE="$start_date 12:00:00" \
-    git commit --allow-empty --date "$start_date 12:00:00" -m "added new page"
+    git commit --allow-empty --date "$start_date 12:00:00" -m "added mock data"
 
     # Move to the next day
     start_date=$(date -I -d "$start_date + 1 day")

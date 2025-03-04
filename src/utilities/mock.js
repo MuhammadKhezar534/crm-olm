@@ -148,6 +148,25 @@ export const loginFields = [
   },
 ];
 
+export const onboardingData2 = [
+  {
+    name: "Home Decor Range",
+    popularity: "80",
+  },
+  {
+    name: "Disney Princess Pink Bag 18",
+    popularity: "29",
+  },
+  {
+    name: "Bathroom Essentials",
+    popularity: "18",
+  },
+  {
+    name: "Apple Smartwatches",
+    popularity: "25",
+  },
+];
+
 export const headersForCustomer = {
   "All Customers": [
     {
