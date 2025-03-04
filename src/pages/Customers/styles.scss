@@ -1,0 +1,72 @@
+.cust-ctn {
+  .inner-ctn {
+    margin-top: 104px;
+    padding: 30px 30px 120px;
+
+    .header-class {
+      .MuiSvgIcon-root {
+        fill: #fff !important;
+      }
+    }
+
+    .table-div {
+      span {
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 143%;
+        letter-spacing: 0.17px;
+      }
+    }
+
+    table {
+      tr {
+        th {
+          width: 10% !important;
+          text-align: left;
+        }
+      }
+
+      tr th:first-child {
+        padding-left: 20px !important;
+      }
+    }
+    .row-c {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .dash-tab-ctn .tab-active {
+      border-bottom: 5px solid var(--secondary);
+      padding-bottom: 4px;
+    }
+    .upper-tab {
+      width: 20%;
+    }
+    .dash-tab-ctn {
+      .dash-tab {
+        padding-bottom: 4px;
+      }
+    }
+    .cust-tab-row {
+      .sp-b {
+        max-width: 350px;
+      }
+    }
+
+    .cust-innertab-row {
+      margin-top: 20px;
+      .sp-b {
+        max-width: 70%;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cust-ctn .inner-ctn .cust-innertab-row .sp-b {
+    margin: auto;
+  }
+}
