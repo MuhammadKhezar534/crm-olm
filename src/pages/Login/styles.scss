@@ -1,0 +1,127 @@
+.login-ctn {
+  .inner-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+
+    .field2 {
+      margin-bottom: 20px !important;
+    }
+    .inp-field {
+      position: relative;
+      margin-bottom: 30px;
+      text-align: left;
+      img {
+        position: absolute;
+        right: -20px;
+        top: 41px;
+        cursor: pointer;
+      }
+
+      .img2 {
+        top: 39px;
+        height: 20px;
+      }
+      label {
+        color: #344054;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        margin-left: 5px;
+        text-align: left;
+      }
+
+      input {
+        margin-top: 5px;
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+        border: 1px solid #d0d5dd;
+        padding: 15px 14px;
+      }
+      input:focus {
+        outline: none !important;
+      }
+    }
+
+    .head {
+      text-align: left;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.4px;
+      text-transform: capitalize;
+    }
+
+    .lowMedium {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .box-hoc {
+      padding: 37px 65px 50px 45px;
+      text-align: center;
+      width: 330px;
+      margin: auto;
+    }
+
+    .rem-me-forgot {
+      justify-content: space-between;
+      width: 360px;
+
+      .rem-me {
+        color: #344054;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+      }
+      .forgot {
+        color: var(--primary);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .have-acc {
+      color: #344054;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 142.857% */
+      span {
+        padding-left: 3px;
+        color: var(--primary);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login-ctn {
+    .inner-ctn {
+      .box-hoc {
+        width: 270px;
+        padding: 37px 45px 50px 25px;
+      }
+
+      .rem-me-forgot {
+        width: 300px;
+      }
+
+      .mbutton button {
+        width: 300px !important;
+      }
+    }
+  }
+}
